@@ -2,14 +2,18 @@
 \usepackage[utf8]{inputenc}
 \usepackage[tokyonightDark]{rsltn-style/v3}
 
-\title{Lectures with Yizhaq: 1}
+\title{Lectures with Yizhaq}
 \author{Robin}
 \date{\today}
 
 \begin{document}
 \maketitle
+\tableofcontents
+\thispagestyle{empty}
+\newpage
 
-\section{Bases, Hopfian, and Residually Finite Groups}
+\section{Lecture 1}
+\subsection{Bases, Hopfian, and Residually Finite Groups}
 
 In these notes, let $F_n$ be the free group of rank $n$. In the case $n = 1$, $F_1 \simeq \Z$. For most questions, we will be interested in the less trivial cases, those for which $n \geq 3$. 
 
@@ -60,7 +64,7 @@ To establish Lemma \ref{lem:The_Free_Group_is_Hopfian}, we use the following.
 
 Lemma \ref{lem:The_Free_Group_is_Hopfian} follows as a corollary.
 
-\section{Homomorphisms to Other Groups}
+\subsection{Homomorphisms to Other Groups}
 
 Now, if $\{x_1,\ldots,x_n\}$ is a base for $F_n$, then if $G$ is any group. A map $\phi: F_n \rightarrow G$ is determined by $\phi(x_1),\phi(x_2),\ldots,\phi(x_n)$. Therefore, $\Hom(F_n,G) \simeq G^n$, but since this identification requires a basis, this isomorphism is non-canonical.
 
@@ -80,7 +84,7 @@ Now, if $\{x_1,\ldots,x_n\}$ is a base for $F_n$, then if $G$ is any group. A ma
     Learn about the set of primitive elements $P_n$.
 \end{problem}
 
-\section{Conjectures and the Product Replacement Graph}
+\subsection{Conjectures and the Product Replacement Graph}
 
 \begin{conjecture}[An Open Problem]\label{conj:An_Open_Problem}
     Let $n \geq 3$, and let $G$ be a finite simple group. Let $\phi: F_n \twoheadrightarrow G$ be a surjective map. Then, $\phi(P_n) = G$.
