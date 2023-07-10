@@ -17,9 +17,9 @@ In these notes, let $F_n$ be the free group of rank $n$. In the case $n = 1$, $F
     A \emph{base} for $F_n$ is an $n$-tuple that freely generates $F_n$.
 \end{definition}
 
-\begin{proposition}[Redundant Freeness]\label{prop:Redundant_Freeness}
+\begin{theorem}[Redundant Freeness]\label{thm:Redundant_Freeness}
     Any $n$-tuple which generates $F_n$ generates it freely.
-\end{proposition}
+\end{theorem}
 
 \begin{definition}[Hopfian]\label{def:Hopfian}
     A group $G$ is said to be \emph{Hopfian} if any surjective homomorphism $\phi: G \rightarrow G$ is also injective, i.e., it is an automorphism. 
@@ -29,7 +29,7 @@ In these notes, let $F_n$ be the free group of rank $n$. In the case $n = 1$, $F
     The free group is Hopfian.
 \end{lemma}
 
-Using this lemma, Proposition \ref{prop:Redundant_Freeness} follows immediately. 
+Using this lemma, Theorem \ref{thm:Redundant_Freeness} follows immediately. 
 
 \begin{proof}[Proof of Proposition \ref{prop:Redundant_Freeness}]
     Suppose that $\{x_1, \ldots, x_n\}$ is a free base for $F_n$ and $\{g_1, \ldots, g_n\}$ is a generating tuple. Then, consider a homomorphism $\phi: F_n \rightarrow F_n$ given by $x_n \rightarrow g_n$. Since $\left<g_1, \ldots, g_n\right> = F_n$, $\phi$ is surjective; since $F_n$ is Hopfian, this establishes that $f$ is injective and thus that $\left\{g_1, \ldots, g_n\right\}$ \emph{freely generate $F_n$}.
@@ -68,6 +68,16 @@ Now, if $\{x_1,\ldots,x_n\}$ is a base for $F_n$, then if $G$ is any group. A ma
     An element $x \in F_n$ is called \emph{primitive} if it belongs to any base. The set of \emph{all} primitive elements is denoted $P_n \subseteq F_n$.
 \end{definition}
 
+\begin{example}[Primitive Elements and Automorphisms]\label{exam:Primitive_Elements_and_Automorphisms}
+    Suppose that $x \in F_n$ is primitive. Then the orbit of $x$ under $\Aut(F_n)$, that is, $\Aut(F_n)(x)$, is precisely $P_n$.
+\end{example}
 
+\begin{example}[Self-Embeddings]\label{exam:Self_Embeddings}
+    Consider the natural embedding $F_n \ideal \Aut(F_n)$ given by taking each element to its corresponding inner automorphism. Then, $P_n \subseteq F_n$ is a conjugacy class in $\Aut(F_n)$.
+\end{example}
+
+\begin{problem}[Learn About Primitive Elements]\label{prob:Learn_About_Primitive_Elements}
+    Learn about the set of primitive elements $P_n$.
+\end{problem}
 
 \end{document}

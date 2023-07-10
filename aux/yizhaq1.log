@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.6.7)  10 JUL 2023 08:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.6.7)  10 JUL 2023 08:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -959,35 +959,38 @@ LaTeX Info: Redefining \nameref on input line 9.
 \openout6 = `yizhaq1.out'.
 
 Package hyperref Info: bookmark level for unknown definitiontemp defaults to 0 on input line 16.
-Package hyperref Info: bookmark level for unknown propositiontemp defaults to 0 on input line 20.
+Package hyperref Info: bookmark level for unknown theoremtemp defaults to 0 on input line 20.
 Package hyperref Info: bookmark level for unknown lemmatemp defaults to 0 on input line 28.
 Package hyperref Info: bookmark level for unknown lemmaproof defaults to 0 on input line 35.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package hyperref Info: bookmark level for unknown propositiontemp defaults to 0 on input line 52.
 Package hyperref Info: bookmark level for unknown propositionproof defaults to 0 on input line 56.
 
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-[2] (aux/yizhaq1.aux)
+Package hyperref Info: bookmark level for unknown exampletemp defaults to 0 on input line 71.
+Package hyperref Info: bookmark level for unknown problemtemp defaults to 0 on input line 79.
+[2] [3] (aux/yizhaq1.aux)
 Package rerunfilecheck Info: File `yizhaq1.out' has not changed.
 (rerunfilecheck)             Checksum: F181AC03FD7267C0A88BB1583D0FA746;143.
  ) 
 Here is how much of TeX's memory you used:
- 32129 strings out of 481252
- 667294 string characters out of 5915889
- 1148732 words of memory out of 5000000
- 48369 multiletter control sequences out of 15000+600000
+ 32154 strings out of 481252
+ 667894 string characters out of 5915889
+ 1150261 words of memory out of 5000000
+ 48387 multiletter control sequences out of 15000+600000
  419151 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  157i,7n,158p,1214b,1017s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/yizhaq1.pdf (2 pages, 119091 bytes).
+Output written on aux/yizhaq1.pdf (3 pages, 122975 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 31 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
