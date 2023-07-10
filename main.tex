@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[tokyonightDark]{rsltn-style/v3}
+
+\title{Dynamics of Automorphisms of $F_n$}
+\author{Robin Truax}
+\date{Summer 2023}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Meeting with Katy, July 7th}
+
+\begin{definition}[Primitive Elements]\label{def:Primitive_Elements}
+    Consider a free group $F_n$ with standard basis $x_1, \ldots, x_n$. A \emph{primitive element} is an element $y$ such that there exists a basis $y, y_2, \ldots, y_n$ for $F_n$. 
+\end{definition}
+
+\begin{example}[Examples of Primitive Elements]\label{exam:Examples_of_Primitive_Elements}
+    In the notation given above,\\
+
+    \begin{enumerate}
+        \itemsep1em
+        \item $x_1x_2$ is a primitive element, since $\{x_1x_2, x_2, \ldots, x_n\}$ is a basis for $F_n$.
+        \item $x_1^2$ is not a primitive element. To see why, consider a group homomorphism $\phi: F_n \rightarrow G$. Then, if there existed a basis $\{x_1^2, y_2, \ldots, y_n\}$ for $F_n$, these elements would satisfy the universal property for free groups for $F_n$; that is, for any group $G$ and list $g_1,\ldots,g_n \in G$, there exists a unique homomorphism such that $\phi(x_1^2) = g_1$ and $\phi(y_i) = g_i$. 
+
+            Yet this is not possible, for if $G = \Z_2$, then $\phi(x_1^2) = 2\phi(x_1) = 0$. Thus, the basis fails to satisfy the universal property for the list $g_1 = \cdots = g_n = 1$.
+    \end{enumerate}
+\end{example}
+
+\begin{problem}[Classifying Primitive Elements]\label{prob:Classifying_Primitive_Elements}
+    Let $X = \{a_1, \ldots, a_n\} \subseteq F_n$ and $H = \left<a_1, \ldots, a_n\right> = \left<X\right>$. Does $H$ contain a primitive element?
+\end{problem}
+
+The answer is related to Whitehead's algorithm, which addresses this problem: 
+
+\begin{problem}[Automorphisms on Sets of $\color{rsltnEnvProblem} n$ Words]\label{prob:Automorphisms_on_sets_of_n_words}
+    Suppose that $U = \left\{u_1, \ldots, u_m\right\}$ and $V = \left\{v_1, \ldots, v_m\right\}$ are two sets of words in $F_n$. Then, does there exist $\phi \in \Aut(F_n)$ such that $\phi(U) = V$.
+\end{problem}
+
+Of course, this is trivial for $m = 1$, but is immediately more complicated for $m > 1$.
+
+% \section{Dense Generation of $\SU(n)$ and $\SO(n)$}
+% \section{The Ping-Pong Lemma and Projective Space}
+%
+% \begin{lemma}[Ping-Pong Lemma]\label{lem:the_ping_pong_lemma}
+%     Let $\Gamma$ be a group acting on a set $X$.
+%     Suppose there exist ``rackets" $x,y \in \Gamma$, and nonempty disjoint ``balls" $A,B,C,D \subseteq X$, such that
+%
+%     \begin{align*}
+%         x \cdot (A \cup C \cup D)      & \subseteq A \\
+%         x^{-1} \cdot (B \cup C \cup D) & \subseteq B \\
+%         y \cdot (A \cup B \cup C)      & \subseteq C \\
+%         y^{-1} \cdot (A \cup B \cup D) & \subseteq D
+%     \end{align*}
+%
+%     Then, $\left<x,y\right> = F_2$, the free group on 2 elements.
+% \end{lemma}
+% \begin{proof}
+%     It must only be shown that any nonempty reduced (no consecutive elements are inverses) sequence (word) of rackets is not the identity.
+%     The key idea is that any racket $x,y,x^{-1},y^{-1}$ collapses two of these nonempty balls into a single ball, and any following racket hit \emph{except the first racket's inverse} sends that ball into another, single, ball.
+%     Thus, any nonempty reduced word collapses two of these balls into a single ball, and therefore cannot be the identity.
+%     The \color{rsltnText} result follows, then, from the element-wise definition of the free group.
+% \end{proof}
+%
+% Now, there is a generalization of this result which may prove useful:
+%
+% \begin{lemma}[Ping-Pong Lemma 2]\label{lem:the_ping_pong_lemma_2} Let $\Gamma$ be a group acting on a set $X$.
+%     Suppose that there exist subgroups $G,H \leq \Gamma$, and disjoint nonempty $A,B \subseteq X$ such that \begin{enumerate}
+%         \item $|G| \geq 3$, \item $(G \setminus \{1\})B \subseteq A$, \item $(H \setminus \{1\})A \subseteq B$.
+%     \end{enumerate}
+%     Then, $\left<G,H\right> \simeq G * H$ (the free product of $G$ and $H$).
+% \end{lemma}
+% \begin{proof}
+%     Let $a_1 \cdots a_n$ be a reduced word.
+%     By collapsing any elements in the same group, we may assume that the word is further reduced so that $a_i \in G \Rightarrow a_{i+1} \not\in G$, and $a_i \in H \Rightarrow a_{i+1} \not\in H$ for all $i$.
+%     Then, suppose $a_1,a_n \in G$.
+%     Then, $a_1 \cdots a_n$ sends $B$ to $A$, so it is not the identity.
+%     On the other hand, suppose that at least one of $a_1,a_n \not\in G$.
+%     Then, since $G$ has order at least $3$, there exists an element $a \in G$ distinct from $a_1^{-1}, a_n^{-1}$ and $1$, so that $a^{-1}a_1 \cdots a_na$ is still reduced.
+%     By the previous case, the expanded word is not the identity; thus, it cannot be the case that $a_1 \cdots a_n$ is the identity.
+% \end{proof}
+%
+% \begin{corollary}[Ping-Pong Lemma]\label{cor:the_ping_pong_lemma}
+%     See Lemma \ref{lem:the_ping_pong_lemma}.
+% \end{corollary}
+% \begin{proof}
+%     The result follows because the given assumption immediately implies that both $x$ and $y$ have infinite order; for example, if $x^m = 1$ for any $m > 0$, we get a contradiction by considering the action of each side on $C$ (the right-hand side sends it to $A$, and the left-hand side sends it to $C$).
+%     Then one can choose $G = \left<x\right>$, $H = \left<y\right>$ (where infinite order implies $G$ is large enough), $A' = A \cup B$, and $B' = C \cup D$, and then the result follows from Lemma \ref{lem:the_ping_pong_lemma_2}.
+% \end{proof}
+%
+% \begin{example}[The Special Linear Group]\label{ex:the_special_linear_group}
+%     Consider the action of the special linear group $\SL_2(\R)$ on the projective line $\R\P^1$ given by sending the line $L$ through the origin to the line $AL$ through the origin.
+%     Then, let \begin{equation*} x = \begin{bmatrix}
+%             100 & 0             \\
+%             0   & \frac{1}{100}
+%         \end{bmatrix} \qquad y = R_{\pi/4}\begin{bmatrix}
+%             100 & 0              \\
+%             0   & \frac{1}{100}.
+%         \end{bmatrix}
+%         R_{-\pi/4}.
+%     \end{equation*}
+%     Notice that any line which is not close to the $y$-axis is mapped to a line which is close to the $x$-axis.
+%     Thus, one may define those lines which are close to the $x$-axis to be $A$, and those lines which are close to the $y$-axis to be $B$.
+%     On the other hand, because of the conjugation by a rotation of angle $\frac{\pi}{4}$, a similar result \color{rsltnText} holds for $y$ regarding the lines $x = y$ (lines near which are defined to be $C$) and $x = -y$ (lines near which are defined to be $D$).
+%     The required rules of Lemma \ref{lem:the_ping_pong_lemma} follow, so that $x$ and $y$ generate $F_2$, as desired.
+% \end{example}
+%
+% \subsection{Unipotent Ping-Pong}
+
+\end{document}
