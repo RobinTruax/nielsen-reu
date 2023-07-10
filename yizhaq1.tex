@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[tokyonightDark]{rsltn-style/v3}
+
+\title{Lectures with Yizhaq: 1}
+\author{Robin}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Bases, Hopfian, and Residually Finite Groups}
+
+In these notes, let $F_n$ be the free group of rank $n$. In the case $n = 1$, $F_1 \simeq \Z$. For most questions, we will be interested in the less trivial cases, those for which $n \geq 3$. 
+
+\begin{definition}[Base for Free Group]\label{def:Base_for_Free_Group}
+    A \emph{base} for $F_n$ is an $n$-tuple that freely generates $F_n$.
+\end{definition}
+
+\begin{proposition}[Redundant Freeness]\label{prop:Redundant_Freeness}
+    Any $n$-tuple which generates $F_n$ generates it freely.
+\end{proposition}
+
+\begin{definition}[Hopfian]\label{def:Hopfian}
+    A group $G$ is said to be \emph{Hopfian} if any surjective homomorphism $\phi: G \rightarrow G$ is also injective, i.e., it is an automorphism. 
+\end{definition}
+
+\begin{lemma}[The Free Group is Hopfian]\label{lem:The_Free_Group_is_Hopfian}
+    The free group is Hopfian.
+\end{lemma}
+
+Using this lemma, Proposition \ref{prop:Redundant_Freeness} follows immediately. 
+
+\begin{proof}[Proof of Proposition \ref{prop:Redundant_Freeness}]
+    Suppose that $\{x_1, \ldots, x_n\}$ is a free base for $F_n$ and $\{g_1, \ldots, g_n\}$ is a generating tuple. Then, consider a homomorphism $\phi: F_n \rightarrow F_n$ given by $x_n \rightarrow g_n$. Since $\left<g_1, \ldots, g_n\right> = F_n$, $\phi$ is surjective; since $F_n$ is Hopfian, this establishes that $f$ is injective and thus that $\left\{g_1, \ldots, g_n\right\}$ \emph{freely generate $F_n$}.
+\end{proof}
+
+To establish Lemma \ref{lem:The_Free_Group_is_Hopfian}, we use the following.
+
+\begin{definition}[Residually Finite]\label{def:Residually_Finite}
+    A group $G$ is residaully finite if for all $g \in G \setminus \{1\}$ there is a finite group $F$ and homomorphism $\phi: G \rightarrow F$ such that $\phi(g) \neq 1 \in F$.
+\end{definition}
+
+\begin{lemma}[The Free Group is Residually Finite]\label{lem:The_Free_Group_is_Residually_Finite}
+    The free group $F_n$ is residually finite.
+\end{lemma}
+\begin{proof}
+    Let $x_1, \ldots, x_n$ be the standard free basis of $F_n$; then, any nontrivial element of $F_n$ is a word $w$ in these elements. 
+    Suppose that $w$ is a nontrivial word. Then, there exists some letter $x_i$ which appears to the power $k \neq 0$. Then, one may define a homomorphism $\phi: F_n \rightarrow \Z/2k\Z$ given by $x_j \mapsto \delta_{ji}$
+\end{proof}
+
+\begin{proposition}[Residually Finite is Hopfian]\label{prop:Residaully_Finite_is_Hopfian}
+    A residually finite finitely generated group is Hopfian.
+\end{proposition}
+\begin{proof}
+    Let $G$ be a finitely generated residually finite group. Let $\phi: G \twoheadrightarrow G$ be a surjective map and $N = \ker \phi$. Let $a_n$ be the number of subgroups of $G$ of index $n$; since $G$ is finitely generated, $a_n$ is finite for all $n$. If $H \leq G$ is of index $n$, then $\phi^{-1}(H)$ is also of index $n$ in $G$ since $\phi$ is onto. Yet $\phi^{-1}(H) \geq N$. Thus, there are $a_n$ subgroups of index $n$ in $G$ that contain $N$. Thus, all subgroups of finite index contain $N$.\\
+
+    Yet, if $G$ is residually finite, for any $g \in G$ which is not the identity, there exists a finite group $F$ and homomorphism $\psi: G \rightarrow F$ such that $\psi(g) \neq 1$. Then, $[G: \Ker \psi] < \infty$, and $\Ker \psi \not\ni g$, whence $g \not\in N$. Thus, $N = \{1\}$.
+\end{proof}
+
+Lemma \ref{lem:The_Free_Group_is_Hopfian} follows as a corollary.
+
+\section{Homomorphisms to Other Groups}
+
+Now, if $\{x_1,\ldots,x_n\}$ is a base for $F_n$, then if $G$ is any group. A map $\phi: F_n \rightarrow G$ is determined by $\phi(x_1),\phi(x_2),\ldots,\phi(x_n)$. Therefore, $\Hom(F_n,G) \simeq G^n$, but since this identification requires a basis, this isomorphism is non-canonical.
+
+\begin{definition}[Primitive Elements]\label{def:Primitive_Elements}
+    An element $x \in F_n$ is called \emph{primitive} if it belongs to any base. The set of \emph{all} primitive elements is denoted $P_n \subseteq F_n$.
+\end{definition}
+
+
+
+\end{document}

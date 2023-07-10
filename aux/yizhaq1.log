@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.6.7)  7 JUL 2023 06:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.6.7)  10 JUL 2023 08:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**yizhaq1.tex
+(./yizhaq1.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -866,8 +866,8 @@ Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 \l__sn_y_dim=\dimen310
 \l__sn_xa_dim=\dimen311
 \l__sn_ya_dim=\dimen312
-))) (aux/main.aux)
-\openout1 = `main.aux'.
+))) (aux/yizhaq1.aux)
+\openout1 = `yizhaq1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -954,46 +954,40 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
 LaTeX Info: Redefining \nameref on input line 9.
- (aux/main.out) (aux/main.out)
+ (aux/yizhaq1.out) (aux/yizhaq1.out)
 \@outlinefile=\write6
-\openout6 = `main.out'.
-
- (aux/main.toc)
-\tf@toc=\write7
-\openout7 = `main.toc'.
+\openout6 = `yizhaq1.out'.
 
 Package hyperref Info: bookmark level for unknown definitiontemp defaults to 0 on input line 16.
-Package hyperref Info: bookmark level for unknown exampletemp defaults to 0 on input line 20.
+Package hyperref Info: bookmark level for unknown propositiontemp defaults to 0 on input line 20.
+Package hyperref Info: bookmark level for unknown lemmatemp defaults to 0 on input line 28.
+Package hyperref Info: bookmark level for unknown lemmaproof defaults to 0 on input line 35.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package hyperref Info: bookmark level for unknown propositionproof defaults to 0 on input line 56.
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-Package hyperref Info: bookmark level for unknown problemtemp defaults to 0 on input line 32.
-
-Underfull \hbox (badness 1158) in paragraph at lines 39--40
-[][][]\OT1/cmr/bx/n/12 Problem 4 \OT1/cmr/m/n/12 (Au-to-mor-phisms on Sets of $[][]\OML/cmm/m/it/12 n$[][] \OT1/cmr/m/n/12 Words)\OT1/cmr/bx/n/12 . [][]\OT1/cmr/m/it/12 Sup-pose that $[]\OML/cmm/m/it/12 U \OT1/cmr/m/n/12 =
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (aux/main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8FBA9C9188A31DDA4F9EBAD580F29DAC;62.
+[2] (aux/yizhaq1.aux)
+Package rerunfilecheck Info: File `yizhaq1.out' has not changed.
+(rerunfilecheck)             Checksum: F181AC03FD7267C0A88BB1583D0FA746;143.
  ) 
 Here is how much of TeX's memory you used:
- 32116 strings out of 481252
- 666926 string characters out of 5915889
- 1145582 words of memory out of 5000000
- 48363 multiletter control sequences out of 15000+600000
- 421243 words of font info for 100 fonts, out of 8000000 for 9000
+ 32129 strings out of 481252
+ 667294 string characters out of 5915889
+ 1148732 words of memory out of 5000000
+ 48369 multiletter control sequences out of 15000+600000
+ 419151 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 157i,7n,158p,1211b,1000s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/main.pdf (1 page, 96780 bytes).
+ 157i,7n,158p,1214b,1017s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on aux/yizhaq1.pdf (2 pages, 119091 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 24 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
