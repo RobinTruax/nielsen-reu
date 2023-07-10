@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[tokyonightDark]{rsltn-style/v3}
+\usepackage[tokyonightLight]{rsltn-style/v3}
 
 \title{Lectures with Yizhaq: 1}
 \author{Robin}
@@ -80,8 +80,20 @@ Now, if $\{x_1,\ldots,x_n\}$ is a base for $F_n$, then if $G$ is any group. A ma
     Learn about the set of primitive elements $P_n$.
 \end{problem}
 
+\section{Conjectures and the Product Replacement Graph}
+
 \begin{conjecture}[An Open Problem]\label{conj:An_Open_Problem}
     Let $n \geq 3$, and let $G$ be a finite simple group. Let $\phi: F_n \twoheadrightarrow G$ be a surjective map. Then, $\phi(P_n) = G$.
+\end{conjecture}
+
+Consider the group $A_{52} = G$. Consider an $n$-tuple $(g_1,\ldots,g_n)$ that generates $G$, and replace it by another $n$-tuple by applying a random Nielsen move (e.g. $(g_1,g_2,\ldots,g_n) \mapsto (g_1,g_1g_2,\ldots,g_n)$).
+
+\begin{definition}[The Graph PRG]\label{def:The_Graph_PRG}
+    Let $G$ be a finite simple group. Define a graph $\operatorname{PRG}(G,n)$ whose verties are an $n$-tuples of elements of $G$ which generate $G$, and are joined by an edge if they are related by a Nielsen move.
+\end{definition}
+
+\begin{conjecture}[Weigold Conjecture]\label{conj:Weigold_Conjecture}
+    For $n \geq 3$ and $G$ a finite simple group, $\operatorname{PRG}(G,n)$ is connected.
 \end{conjecture}
 
 \end{document}
